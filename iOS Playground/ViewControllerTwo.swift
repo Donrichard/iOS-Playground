@@ -10,28 +10,22 @@ import UIKit
 
 class ViewControllerTwo: UIViewController {
 
+    @IBOutlet weak var nameField: UITextField!
+    weak var delegate: NameDelegate?
+    
     override func viewDidLoad()
     {
-        addNavItem()
         super.viewDidLoad()
     }
 
     @IBAction func goBack(_ sender: UIButton)
-    {
-        self.dismiss(animated: true, completion: nil)
+    { self.navigationController?.popViewController(animated: true)
     }
     
-    func addNavItem()
+    @IBAction func submitName(_ sender: UIButton)
     {
-        let navbar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIScreen.main.bounds.size.width,height: 50));
-        navbar.tintColor = UIColor.lightGray
-        self.view.addSubview(navbar)
-        
-        let navItem = UINavigationItem(title: "Second Screen")
-        let navBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.undo, target: self, action: nil)
-        //let navBarButton = UIBarButtonItem(title: "<Back", style: .done, target: self, action: nil)
-        navItem.leftBarButtonItem = navBarButton
-        
-        navbar.items = [navItem]
+        let name = nameField.text ?? "No name"
+        self.delegate?.onNameCollected(name)
+    self.navigationController?.popViewController(animated: true)
     }
 }

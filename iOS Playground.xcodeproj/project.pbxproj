@@ -13,6 +13,7 @@
 		279F5B2E22829B4500E7558E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279F5B2D22829B4500E7558E /* Assets.xcassets */; };
 		279F5B3122829B4500E7558E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F5B2F22829B4500E7558E /* LaunchScreen.storyboard */; };
 		279F5B3B22829DF100E7558E /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F5B3A22829DF100E7558E /* ViewControllerTwo.swift */; };
+		279F5B432282C7EE00E7558E /* NameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F5B422282C7EE00E7558E /* NameDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		279F5B3022829B4500E7558E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		279F5B3222829B4500E7558E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279F5B3A22829DF100E7558E /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		279F5B422282C7EE00E7558E /* NameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		279F5B2522829B4400E7558E /* iOS Playground */ = {
 			isa = PBXGroup;
 			children = (
+				279F5B3F2282C22200E7558E /* Delegates */,
 				279F5B2622829B4400E7558E /* AppDelegate.swift */,
 				279F5B2822829B4400E7558E /* ViewController.swift */,
 				279F5B2A22829B4400E7558E /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				279F5B3A22829DF100E7558E /* ViewControllerTwo.swift */,
 			);
 			path = "iOS Playground";
+			sourceTree = "<group>";
+		};
+		279F5B3F2282C22200E7558E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				279F5B422282C7EE00E7558E /* NameDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				279F5B2922829B4400E7558E /* ViewController.swift in Sources */,
+				279F5B432282C7EE00E7558E /* NameDelegate.swift in Sources */,
 				279F5B2722829B4400E7558E /* AppDelegate.swift in Sources */,
 				279F5B3B22829DF100E7558E /* ViewControllerTwo.swift in Sources */,
 			);
