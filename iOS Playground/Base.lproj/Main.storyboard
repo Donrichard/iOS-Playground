@@ -61,6 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Rvd-fM-zhi"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="AAu-Qr-dlg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLE-ie-SiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
