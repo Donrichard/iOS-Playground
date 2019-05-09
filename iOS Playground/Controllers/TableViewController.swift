@@ -62,10 +62,12 @@ extension TableViewController: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StudentTableViewCell", for: indexPath) as! StudentTableViewCell
         let students = self.studentsBySection[indexPath.section + 1]
         let student = students![indexPath.row]
-        cell.textLabel?.text = student.face
+        
+        cell.batchLabel.text = String(describing: student.batch)
+        cell.faceLabel.text = student.face
         
         return cell
     }
