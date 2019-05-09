@@ -82,5 +82,12 @@ extension TableViewController: UITableViewDelegate
     {
         print("Section:\(indexPath.section)")
         print("Row:\(indexPath.row)")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "TableDetailViewController") as! TableDetailViewController
+        
+        detailVC.selectedFace = studentsBySection[indexPath.section + 1]![indexPath.row]
+        
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
