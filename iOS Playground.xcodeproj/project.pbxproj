@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		27220724228454BF00A186A5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27220723228454BF00A186A5 /* TableViewController.swift */; };
 		2722072822845FD500A186A5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722072722845FD500A186A5 /* Student.swift */; };
-		2722072A2284663B00A186A5 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272207292284663B00A186A5 /* Test.swift */; };
 		2722072C228476A500A186A5 /* TableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722072B228476A500A186A5 /* TableDetailViewController.swift */; };
 		272207362284815600A186A5 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272207352284815600A186A5 /* StudentTableViewCell.swift */; };
+		272207392284849C00A186A5 /* ViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272207382284849C00A186A5 /* ViewController+HideKeyboard.swift */; };
 		279F5B2722829B4400E7558E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F5B2622829B4400E7558E /* AppDelegate.swift */; };
 		279F5B2922829B4400E7558E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F5B2822829B4400E7558E /* ViewController.swift */; };
 		279F5B2C22829B4400E7558E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F5B2A22829B4400E7558E /* Main.storyboard */; };
@@ -24,9 +24,9 @@
 /* Begin PBXFileReference section */
 		27220723228454BF00A186A5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2722072722845FD500A186A5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		272207292284663B00A186A5 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		2722072B228476A500A186A5 /* TableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDetailViewController.swift; sourceTree = "<group>"; };
 		272207352284815600A186A5 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		272207382284849C00A186A5 /* ViewController+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
 		279F5B2322829B4400E7558E /* iOS Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279F5B2622829B4400E7558E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279F5B2822829B4400E7558E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,6 @@
 				279F5B2822829B4400E7558E /* ViewController.swift */,
 				279F5B3A22829DF100E7558E /* ViewControllerTwo.swift */,
 				27220723228454BF00A186A5 /* TableViewController.swift */,
-				272207292284663B00A186A5 /* Test.swift */,
 				2722072B228476A500A186A5 /* TableDetailViewController.swift */,
 			);
 			path = Controllers;
@@ -68,6 +67,14 @@
 				272207352284815600A186A5 /* StudentTableViewCell.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		272207372284848600A186A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				272207382284849C00A186A5 /* ViewController+HideKeyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		279F5B1A22829B4400E7558E = {
@@ -89,6 +96,7 @@
 		279F5B2522829B4400E7558E /* iOS Playground */ = {
 			isa = PBXGroup;
 			children = (
+				272207372284848600A186A5 /* Extensions */,
 				2722072622845FA800A186A5 /* Models */,
 				27220725228454D900A186A5 /* Controllers */,
 				279F5B3F2282C22200E7558E /* Delegates */,
@@ -183,8 +191,8 @@
 				279F5B2922829B4400E7558E /* ViewController.swift in Sources */,
 				2722072822845FD500A186A5 /* Student.swift in Sources */,
 				279F5B432282C7EE00E7558E /* NameDelegate.swift in Sources */,
-				2722072A2284663B00A186A5 /* Test.swift in Sources */,
 				2722072C228476A500A186A5 /* TableDetailViewController.swift in Sources */,
+				272207392284849C00A186A5 /* ViewController+HideKeyboard.swift in Sources */,
 				272207362284815600A186A5 /* StudentTableViewCell.swift in Sources */,
 				279F5B2722829B4400E7558E /* AppDelegate.swift in Sources */,
 				27220724228454BF00A186A5 /* TableViewController.swift in Sources */,

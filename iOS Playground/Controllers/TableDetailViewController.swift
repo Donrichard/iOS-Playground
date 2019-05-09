@@ -20,6 +20,8 @@ class TableDetailViewController: UIViewController
         faceLabel.text = "Face: \(selectedFace!.face)"
         batchLabel.text = "Batch: \(selectedFace!.batch)"
         
+        hideKeyboardWhenTappedAround()
+        
         super.viewDidLoad()
     }
 
