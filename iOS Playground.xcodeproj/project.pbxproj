@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27220724228454BF00A186A5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27220723228454BF00A186A5 /* TableViewController.swift */; };
 		279F5B2722829B4400E7558E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F5B2622829B4400E7558E /* AppDelegate.swift */; };
 		279F5B2922829B4400E7558E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F5B2822829B4400E7558E /* ViewController.swift */; };
 		279F5B2C22829B4400E7558E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F5B2A22829B4400E7558E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27220723228454BF00A186A5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		279F5B2322829B4400E7558E /* iOS Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279F5B2622829B4400E7558E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279F5B2822829B4400E7558E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27220725228454D900A186A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				279F5B2822829B4400E7558E /* ViewController.swift */,
+				279F5B3A22829DF100E7558E /* ViewControllerTwo.swift */,
+				27220723228454BF00A186A5 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		279F5B1A22829B4400E7558E = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +70,13 @@
 		279F5B2522829B4400E7558E /* iOS Playground */ = {
 			isa = PBXGroup;
 			children = (
+				27220725228454D900A186A5 /* Controllers */,
 				279F5B3F2282C22200E7558E /* Delegates */,
 				279F5B2622829B4400E7558E /* AppDelegate.swift */,
-				279F5B2822829B4400E7558E /* ViewController.swift */,
 				279F5B2A22829B4400E7558E /* Main.storyboard */,
 				279F5B2D22829B4500E7558E /* Assets.xcassets */,
 				279F5B2F22829B4500E7558E /* LaunchScreen.storyboard */,
 				279F5B3222829B4500E7558E /* Info.plist */,
-				279F5B3A22829DF100E7558E /* ViewControllerTwo.swift */,
 			);
 			path = "iOS Playground";
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 				279F5B2922829B4400E7558E /* ViewController.swift in Sources */,
 				279F5B432282C7EE00E7558E /* NameDelegate.swift in Sources */,
 				279F5B2722829B4400E7558E /* AppDelegate.swift in Sources */,
+				27220724228454BF00A186A5 /* TableViewController.swift in Sources */,
 				279F5B3B22829DF100E7558E /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
