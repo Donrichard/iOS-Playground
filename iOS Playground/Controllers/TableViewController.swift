@@ -28,13 +28,16 @@ class TableViewController: UIViewController
         Student("👨‍⚕️",1)]
     
     var lastIndex: Int?
-    var studentsInThisSection: [Student] = []
+    var studentsBySection: [Int : [Student]] = [:]
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        studentsBySection = Dictionary(grouping: students, by: { $0.batch })
+        
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
 }
@@ -50,22 +53,19 @@ extension TableViewController: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return self.students.filter({ (Q) -> Bool in
-            Q.batch == section + 1
-        }).count
+        return self.studentsBySection[section + 1]!.count
+        
+//        return self.students.filter({ (Q) -> Bool in
+//            Q.batch == section + 1
+//        }).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        if self.lastIndex != indexPath.section + 1 {
-            self.studentsInThisSection = self.students.filter({ (Q) -> Bool in
-                Q.batch == indexPath.section + 1
-            })
-        }
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
-        let item = self.studentsInThisSection[indexPath.row]
-        cell.textLabel?.text = item.face
+        let students = self.studentsBySection[indexPath.section + 1]
+        let student = students![indexPath.row]
+        cell.textLabel?.text = student.face
         
         return cell
     }
@@ -73,5 +73,14 @@ extension TableViewController: UITableViewDataSource
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
     {
         return "Batch \(section + 1)"
+    }
+}
+
+extension TableViewController: UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        print("Section:\(indexPath.section)")
+        print("Row:\(indexPath.row)")
     }
 }
