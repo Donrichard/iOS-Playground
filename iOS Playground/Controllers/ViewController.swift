@@ -46,7 +46,20 @@ class ViewController: UIViewController {
         let vc2 = storyboard.instantiateViewController(withIdentifier: "ViewControllerTwo") as! ViewControllerTwo
         vc2.delegate = self
         
+        let recipientDelegate: NameDelegate = vc2
+        recipientDelegate.onNameCollected("Test")
+        
         self.navigationController?.pushViewController(vc2, animated: true)
+    }
+    
+    @IBAction func onShowAlertPressed(_ sender: UIButton)
+    {
+        let alert = UIAlertController(title: "Hello!", message: "Hai", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
 }
 
